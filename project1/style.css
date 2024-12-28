@@ -1,0 +1,89 @@
+/* Container Styles */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    animation: colorChange 5s infinite;
+}
+
+/* Background Animation */
+@keyframes colorChange {
+    0% {
+        background-color: aquamarine;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+/* Heading Styles */
+.fade-in {
+    font-size: 8em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+/* Fade-In Animation for Heading */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Button Styles */
+.container > button {
+    font-size: 2em;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out, background-color 0.7s ease-in-out;
+}
+
+.container > button:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.2);
+    transition: transform 1.3s ease-in-out, background-color 1.3s ease-in-out;
+}
+
+
+.animate-text {
+    animation: bounceText 1s infinite;
+}
+
+@keyframes bounceText {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
