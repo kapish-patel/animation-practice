@@ -1,0 +1,32 @@
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* flip the card */
+.card:hover{
+    transform: rotateY(180deg);
+    transition: all 1s ease;
+}
+
+.card-info{
+    display: none;
+}
